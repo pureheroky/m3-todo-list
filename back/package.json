@@ -1,0 +1,23 @@
+{
+  "name": "m3-advanced-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "pureheroky",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.4",
+    "@types/node": "^24.9.1",
+    "express": "^5.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "tsx": "^4.20.6"
+  }
+}

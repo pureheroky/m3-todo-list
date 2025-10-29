@@ -1,0 +1,129 @@
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 2rem auto;
+  max-width: 800px;
+  background: #f5f7fa;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  text-align: left;
+  padding: 0.75rem;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.status.pending {
+  background-color: #ffc107;
+}
+
+.status.in_progress {
+  background-color: #17a2b8;
+}
+
+.status.done {
+  background-color: #28a745;
+}
+
+.actions button {
+  margin-right: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.actions button.delete {
+  background-color: #dc3545;
+}
+
+.message {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #007bff;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  opacity: 0.95;
+  animation: fade-in 0.3s ease;
+}
+
+.message.error {
+  background: #dc3545;
+}
+
+.message.success {
+  background: #28a745;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
