@@ -7,7 +7,12 @@ import { errorHandler } from "./utils/errorHandler";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+let corsOptions = {
+  origin: "http://127.0.0.1:8080",
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(logger);
 app.use("/tasks", taskRoutes);

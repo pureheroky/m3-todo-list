@@ -85,7 +85,7 @@ export async function handleFormSubmit(e: SubmitEvent) {
     return;
   }
 
-  if (editingId) {
+  if (editingId !== null) {
     await api.update(editingId, newTask);
     showMessage("Task updated", "success");
     editingId = null;
